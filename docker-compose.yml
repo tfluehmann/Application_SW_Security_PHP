@@ -3,7 +3,7 @@ services:
   web:
     image: 'php:7.0-apache'
     ports:
-      - "5000:5000"
+      - "8080:80"
     volumes:
-      - './config/php.ini:/usr/local/etc/php/'
+      #      - './config/php.ini:/usr/local/etc/php/'
       - './src/:/var/www/html/'
